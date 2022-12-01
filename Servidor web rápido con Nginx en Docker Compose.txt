@@ -1,0 +1,27 @@
+1 — Vuelve a tu directorio base
+$ cd ~/
+2 — Crear el directorio de trabajo
+$ mkdir docker-nginx-demo
+3 — Entra en ese directorio
+$ cd docker-nginx-demo
+4 — Cree la configuración de Docker & Docker Compose
+$ touch docker-compose.yaml
+5 — Cree el directorio que contendrá sus archivos HTML
+$ mkdir src
+6 — Escribe algo para tu primera página
+$ echo "Hello world!" > src/index.html
+7 — Edite su archivo de configuración de Docker Compose
+$ vim docker-compose.yaml
+version: "3"
+
+services:
+    client:
+        image: nginx
+        ports:
+            - 8000:80
+        volumes:
+            - ./src:/usr/share/nginx/html
+8 — Inicie el servidor
+$ docker-compose up --detach
+9 — Abre tu página
+$ chromium http://localhost:8000
