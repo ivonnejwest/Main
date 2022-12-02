@@ -6,3 +6,5 @@ Las direcciones IP del contenedor cambian en la actualización. Haga referencia 
 
 Enlaces
 Si define vínculos y redes, los servicios vinculados deben compartir al menos una red para comunicarse.
+
+Ivonne, olvidaste agregar lo de problemas comunes
