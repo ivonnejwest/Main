@@ -6,3 +6,12 @@ puertos : una lista de puertos que ponemos a disposición fuera del contenedor. 
 container_name – el nombre de nuestro contenedor
 volúmenes : especifica los volúmenes que utiliza el contenedor. En nuestra configuración tenemos directorios compartidos con nuestro sistema (subdirectorios en $GITLAB_HOME) y un volumen adicional que permite acceder al entorno Docker desde el runner de GitLab.
 redes : define la red virtual en la que operarán los contenedores. En nuestro caso, el portal www y el corredor operan en una "red de gitlab"
+
+Después del lanzamiento, aparecerá un módulo de configuración. El módulo proporciona la siguiente información:
+
+Ingrese la URL de la instancia de GitLab : confirme el valor ingresado (haga clic en ingresar)
+Ingrese el token de registro : ingrese el token copiado antes.
+Ingrese una descripción para el corredor : ingrese el nombre del corredor, por ejemplo, docker-runner
+Ingrese etiquetas para el corredor : deje el campo en blanco aquí
+Ingrese un ejecutor : ingrese docker aquí
+Ingrese la imagen de Docker predeterminada : aquí proporcionamos la imagen de Docker predeterminada, por ejemplo, maven: más reciente
