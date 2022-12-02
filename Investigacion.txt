@@ -1,0 +1,2 @@
+¿Qué es GitLab?
+Gitlab es una herramienta que soporta el desarrollo de software usando los procesos de Integración Continua y Entrega Continua. Su componente principal es el sistema de control de versiones Git. Además, proporciona muchas funciones que apoyan el trabajo de los programadores en la construcción continua, prueba e instalación automática de proyectos para diversos entornos.
