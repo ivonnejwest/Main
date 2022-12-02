@@ -1,2 +1,8 @@
 ¿Qué es GitLab?
 Gitlab es una herramienta que soporta el desarrollo de software usando los procesos de Integración Continua y Entrega Continua. Su componente principal es el sistema de control de versiones Git. Además, proporciona muchas funciones que apoyan el trabajo de los programadores en la construcción continua, prueba e instalación automática de proyectos para diversos entornos.
+
+imagen – imagen acoplable que queremos usar en nuestro servidor
+puertos : una lista de puertos que ponemos a disposición fuera del contenedor. En nuestra configuración, proporcionamos los puertos 80, 443 (sitio web)
+container_name – el nombre de nuestro contenedor
+volúmenes : especifica los volúmenes que utiliza el contenedor. En nuestra configuración tenemos directorios compartidos con nuestro sistema (subdirectorios en $GITLAB_HOME) y un volumen adicional que permite acceder al entorno Docker desde el runner de GitLab.
+redes : define la red virtual en la que operarán los contenedores. En nuestro caso, el portal www y el corredor operan en una "red de gitlab"
