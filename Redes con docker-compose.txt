@@ -1,0 +1,25 @@
+ networks:
+      red_web:
+        ipv4_address: 192.168.10.10
+      red_interna:
+        ipv4_address: 192.168.20.10
+    hostname: servidor_web
+    
+    networks:
+      red_interna:
+        ipv4_address: 192.168.20.20
+    hostname: servidor_mariadb
+networks:
+    red_web:
+        ipam:
+            config:
+              - subnet: 192.168.10.0/24
+    red_interna:
+        ipam:
+            config:
+              - subnet: 192.168.20.0/24
+             #docker-compose up -d
+#Creating network "docker-compose_red_web" with the default driver
+#Creating network "docker-compose_red_interna" with the default driver
+#Creating servidor_mariadb ... done
+#Creating servidor_web     ... done
